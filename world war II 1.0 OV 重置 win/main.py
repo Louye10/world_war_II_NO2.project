@@ -307,7 +307,7 @@ class MainGame:
         self.current_turn = game_state["current_turn"]
         self.player_country = game_state["player_country"]
     
-    def show_map_window(self):
+    def show_map_window(self):     # 这里只是暂时留个雏形，后期会改！！！
         goal = ["europe_map.jpg", "europe_map.png", "map.jpg", "map.png", "ww2_map.jpg"]
         img_file = None
         for file in goal:
@@ -337,4 +337,5 @@ class MainGame:
         except Exception as e:
             print(f"打开地图时出错: {e}")
             print("若多次尝试依然报错,请手动打开地图图片文件")
+
             input("按回车键继续...")
